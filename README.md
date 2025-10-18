@@ -1,91 +1,122 @@
-## Profile Card
-A responsive, accessible Profile Card built with HTML, CSS, and vanilla JavaScript for the HNG13 Stage 0 Frontend Task.
-Features
+# Profile Card
 
-### Semantic HTML (<article>, <figure>, <nav>, <section>)
-
-Modern, responsive layout: vertical on mobile, avatar-left/content-right on desktop
-Dynamic current time in milliseconds via Date.now()
-Accessible avatar with alt text and keyboard-focusable social links
-Testable elements with required data-testid attributes
-Clean UI with Google Fonts, subtle animations, and truncation for long text
-Distinct sections for hobbies/dislikes (columns on desktop, stacked on mobile)
-
-### Live Demo
-
-https://your-hosted-urlReplace with your Netlify, GitHub Pages, or other hosted URL after deployment.
+A **responsive**, **accessible** Profile Card built with **HTML**, **CSS**, and **vanilla JavaScript** for the **HNG13 Stage 0 Frontend Task**.
+This project demonstrates semantic structure, responsive design, accessibility best practices, and basic dynamic content handling.
 
 ---
-<img src="./public/blard_profile_card.png" alt="Blard_profile card" width="50%">
 
+## Features
 
-### Getting Started
+* **Semantic HTML** using `<article>`, `<figure>`, `<nav>`, and `<section>`
+* **Modern, responsive layout** — vertical on mobile, avatar-left/content-right on desktop
+* **Dynamic current time** displayed in milliseconds via `Date.now()`
+* **Accessibility**: alt text for avatar and keyboard-focusable social links
+* **Testable elements** with required `data-testid` attributes
+* **Clean UI** with Google Fonts, subtle animations, and truncation for long text
+* **Structured content sections** for hobbies/dislikes (columns on desktop, stacked on mobile)
 
-- Prerequisites
-A modern web browser (e.g., Chrome, Firefox)
-Git (for cloning)
-A static file server (optional for local testing)
+---
 
-- Installation
-Clone this repository:git clone 
+## Live Demo
 
-```bash 
-https://github.com/Blard-omu/hng13-stage-0-frontend.git
+[Replace this link with your deployed URL](https://your-hosted-url)
+*(e.g., Netlify, GitHub Pages, Vercel, etc.)*
+
+---
+
+<img src="./public/blard_profile_card.png" alt="Blard Profile Card Preview" width="50%">
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+* A modern web browser (e.g., Chrome, Firefox)
+* Git (for cloning the repo)
+* A static file server *(optional for local testing)*
+
+### Installation
+
+```bash
+# Clone this repository
+git clone https://github.com/Blard-omu/hng13-stage-0-frontend.git
+
+# Navigate into the project folder
 cd hng13-stage-0-frontend
 ```
 
-Update index.html with your details (name, bio, social links, avatar URL).
-Open index.html in a browser or serve locally i.e Live http-server
+1. Update `index.html` with your details (name, bio, social links, avatar URL).
+2. Open `index.html` in your browser **or** serve locally (e.g., with Live Server).
+3. Access at:
 
-Access at ```http://127.0.0.1:5500/index.html```
+   ```
+   http://127.0.0.1:5500/index.html
+   ```
 
-### Usage
+---
 
-Open the live demo or local URL in a browser.
-Navigate using mouse or keyboard (Tab key for links).
-Verify data-testid attributes in DevTools (e.g., test-profile-card, test-user-name).
-Check test-user-time matches Date.now() in milliseconds.
-Test responsiveness on mobile, tablet, and desktop views.
+## Usage
 
-### Project Structure
+* Open the **live demo** or local URL in your browser.
+* Navigate using mouse or **Tab key** for keyboard accessibility.
+* Inspect `data-testid` attributes in DevTools (e.g., `test-profile-card`, `test-user-name`).
+* Verify `test-user-time` matches `Date.now()` in milliseconds.
+* Test responsiveness on mobile, tablet, and desktop views.
+
+---
+
+## Project Structure
 
 ```bash
 hng13-stage-0-frontend/
-├── index.html    # Semantic HTML structure
-├── style.css    # Responsive CSS with Grid
-├── script.js     # JavaScript for dynamic time
-└── README.md     # This file
+├── index.html   # Semantic HTML structure
+├── style.css    # Responsive CSS with Grid and animations
+├── script.js    # JavaScript for dynamic time
+└── README.md    # Project documentation
 ```
 
-### Deployment
-Deploy to Netlify, GitHub Pages, or another static hosting platform:
-- Netlify
+---
 
-Create a Netlify account and new site.
-Connect your GitHub repo (Blard-omu/hng13-stage-0-frontend).
-Set the public folder to . (root).
-Deploy and access at ```https://your-site-name.netlify.app```.
+## Deployment
 
-- GitHub Pages
+### Netlify
 
-Push to GitHub.
-Go to repo Settings > Pages.
-Set source to main branch, root folder.
-Access at ```https://Blard-omu.github.io/hng13-stage-0-frontend```.
+1. Create a [Netlify](https://www.netlify.com/) account and a new site.
+2. Connect your GitHub repo (`Blard-omu/hng13-stage-0-frontend`).
+3. Set the **build directory** to `.` (root).
+4. Deploy and access at:
 
-### Testing
+   ```
+   https://your-site-name.netlify.app
+   ```
 
-- Manual Testing:
-Verify all elements (test-profile-card, test-user-name, etc.) exist via DevTools.
-Check test-user-time matches Date.now() (within a small delta).
-Test responsiveness: Resize browser or use DevTools mobile view.
-Test keyboard navigation: Tab through links, verify focus styles.
-Ensure bio truncates gracefully for long text.
+### GitHub Pages
 
+1. Push your code to GitHub.
+2. Go to **Settings > Pages**.
+3. Set the source to `main` branch, root folder.
+4. Access at:
 
-- Automated Testing:
-Example Cypress test:
-```bash 
+   ```
+   https://Blard-omu.github.io/hng13-stage-0-frontend
+   ```
+
+---
+
+## Testing
+
+### Manual Testing
+
+* Verify required elements exist (`test-profile-card`, `test-user-name`, etc.) using DevTools.
+* Check `test-user-time` matches `Date.now()` (within a small delta).
+* Test responsiveness by resizing the browser or using DevTools mobile view.
+* Use **Tab** navigation to ensure all links are focusable and accessible.
+* Confirm bio truncates gracefully for long text.
+
+### Automated Testing (Example with Cypress)
+
+```javascript
 describe('Profile Card', () => {
   it('has all required elements', () => {
     cy.visit('http://127.0.0.1:5500/index.html');
@@ -96,16 +127,27 @@ describe('Profile Card', () => {
 });
 ```
 
-### Technologies Used
+---
 
-HTML5 (semantic)
-CSS3 (Grid, media queries, Google Fonts)
-Vanilla JavaScript
+## Technologies Used
 
-### Author
+* **HTML5** — semantic structure
+* **CSS3** — Grid, media queries, Google Fonts, animations
+* **Vanilla JavaScript** — dynamic time rendering
 
-Name: BLARD Omu
-Email: peteromu76@gmail.com
+---
 
-### License
-ISC
+## Author
+
+**Name:** BLARD Omu
+**Email:** [peteromu76@gmail.com](mailto:peteromu76@gmail.com)
+
+---
+
+## License
+
+This project is licensed under the **ISC License**.
+
+---
+
+✅ *Built for HNG13 Stage 0 — accessible, responsive, and testable UI design.*
