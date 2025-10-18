@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="icon" href="./public/Group 41053.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="./assets/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <article data-testid="test-profile-card" class="profile-card">
+      <header class="profile-header">
+        <figure class="avatar-container">
+          <img
+            data-testid="test-user-avatar"
+            src="./assets/blard_omu3.png"
+            alt="BLARD's profile picture"
+          />
+          <figcaption>Fullstack Engineer</figcaption>
+        </figure>
+        <h2 data-testid="test-user-name" aria-label="User name">BLARD</h2>
+      </header>
+      <section class="profile-content">
+        <p data-testid="test-user-bio" class="bio">
+          I'm a passionate Fullstack Engineer with expertise in Javascript, Python, TypeScript, Node.js, and other modern web technologies. I love
+          building accessible, responsive and scalable web applications!
+        </p>
+        <div class="time-container">
+          <span><i class="bi bi-clock"></i></span>
+          <p data-testid="test-user-time" id="current-time" class="time"></p>
+        </div>
+        
+        <nav data-testid="test-user-social-links" class="social-links">
+          <ul class="social-links">
+            <li>
+              <a
+                href="https://linkedin.com/in/peteromu5239"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://x.com/peteromu5239"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-x"
+              >
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Blard-omu"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://peter-portfolio-ruddy.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-website"
+              >
+                <i class="bi bi-globe"></i>
+              </a>
+            </li>
+          </ul>
+          
+        </nav>
+        <div class="lists-container">
+          <section data-testid="test-user-hobbies" class="list-section">
+            <h3>Hobbies</h3>
+            <ul>
+              <li>Coding</li>
+              <li>Reading tech blogs</li>
+              <li>Riding Bike</li>
+            </ul>
+          </section>
+          <section data-testid="test-user-dislikes" class="list-section">
+            <h3>Dislikes</h3>
+            <ul>
+              <li>Broken code</li>
+              <li>Slow internet</li>
+              <li>Cluttered UI</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+    </article>
+    <script src="./script.js"></script>
+  </body>
+</html>
