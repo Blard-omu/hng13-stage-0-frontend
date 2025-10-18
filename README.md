@@ -19,8 +19,8 @@ This project demonstrates semantic structure, responsive design, accessibility b
 
 ## Live Demo
 
-[Replace this link with your deployed URL](https://your-hosted-url)
-*(e.g., Netlify, GitHub Pages, Vercel, etc.)*
+[https://blard-omu.github.io/hng13-stage-0-frontend](https://blard-omu.github.io/hng13-stage-0-frontend)
+
 
 ---
 
